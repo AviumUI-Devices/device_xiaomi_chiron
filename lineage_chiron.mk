@@ -24,6 +24,14 @@ $(call inherit-product, device/xiaomi/chiron/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# AviumUI Configs
+AVIUM_MAINTAINER := Nanhumly
+AVIUM_SETTINGS_SOC_MODEL_NAME := Qualcomm MSM8998
+AVIUM_SETTINGS_DEVICE_CODENAME := Xiaomi MIX 2
+AVIUM_IS_OFFICIAL := true
+WITH_GMS := true
+AVIUM_FORCE_SET_FAKE_PROP := true
+
 PRODUCT_NAME := lineage_chiron
 PRODUCT_DEVICE := chiron
 PRODUCT_BRAND := Xiaomi
